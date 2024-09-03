@@ -1,7 +1,22 @@
+name = "sink"
 upload_source_maps = true
+pages_build_output_dir = "./dist"
 
 [dev]
 port = 3000
 
 [ai]
 binding = "AI"
+
+[[kv_namespaces]]
+binding = "KV"
+id = "60642d9b30dd4b87ab023689c11e6dfc"
+
+[[analytics_engine_datasets]]
+binding = "ANALYTICS"
+dataset = "sink"
+
+[vars]
+
+NUXT_REDIRECT_STATUS_CODE = "307"
+
